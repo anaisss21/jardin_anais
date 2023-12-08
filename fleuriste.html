@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleuriste Toulouse- Jardin Anais</title>
+</head>
+
+<body>
+    
+    <style>
+        .container {
+            border: black 1px solid;
+            
+        }
+
+        header {
+            border: 1px solid red;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        /* 2 règles CSS en fonction de l alargeur de l'écran > 600px */
+        @media (max-width:1440px) {
+
+            .photorow {
+                border: solid 1px red;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .menu {
+                border: solid 1px blue;
+                padding: 5px;
+                margin: 3px;
+                background-color: cyan;
+            }
+
+            .photo {
+                margin: 20px;
+                border: dashed 1px black;
+                width: 32%;
+            }
+
+        }
+
+        /* Mobile < 600px */
+        @media (max-width:599px) {
+
+            .photorow {
+
+                border: solid 1px red;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+            }
+
+            .menu {
+                border: solid 1px blue;
+                padding: 5px;
+                margin: 3px;
+                background-color: rgb(238, 2, 191)
+            }
+
+            .photo {
+                box-sizing: border-box;
+                border: dashed 1px black;
+                width: 98%;
+            }
+        }
+
+        main {
+            border: 1px solid rgb(21, 255, 0);
+        }
+
+
+
+        footer {
+            border: 1px solid rgb(142, 22, 223);
+        }
+    </style>
+    <div class="container">
+        <header>
+            <h1>Jardin Anais</h1>
+            <nav>
+
+                <div class="menu">Accueil</div>
+                <div class="menu">Boutique</div>
+                <div class="menu">Actualités</div>
+                <div class="menu">Contact</div>
+            </nav>
+        </header>
+        <main>
+
+            <div class="photorow">
+                <div class="photo">1</div>
+                <div class="photo">2</div>
+                <div class="photo">3</div>
+            </div>
+            <div class="photorow">
+                <div class="photo">4</div>
+                <div class="photo">5</div>
+                <div class="photo">6</div>
+            </div>
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>
